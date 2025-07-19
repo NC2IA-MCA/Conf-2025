@@ -123,6 +123,12 @@ footer {
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
+  
+}
+.contact h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  
 }
 
 .card {
@@ -404,10 +410,11 @@ footer {
       text-align: center;
     }
 
-    .members-section h2 {
+    .members-section h3 {
       font-size: 22px;
       margin-bottom: 30px;
       color: #333;
+      text-align: center;
     }
 
     .member-grid {
