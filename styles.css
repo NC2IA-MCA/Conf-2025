@@ -24,7 +24,7 @@ body {
   background-image: url(Purple\ and\ Black\ Modern\ Neon\ Technology\ Landscape\ Banner.png);
   background-size: cover;
   color: white;
-  padding: 6rem 0;
+  padding: 2rem 0;
   text-align: center;
 }
 
@@ -398,22 +398,22 @@ footer {
   }
 </style>
 .members-section {
-      padding: 50px 20px;
-      max-width: 1200px;
+      padding: 10px 20px;
+      max-width: 1000px;
       margin: auto;
       text-align: center;
     }
 
     .members-section h2 {
-      font-size: 32px;
-      margin-bottom: 40px;
+      font-size: 22px;
+      margin-bottom: 30px;
       color: #333;
     }
 
     .member-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 30px;
+      gap: 10px;
       justify-content: center;
     }
 
