@@ -6,7 +6,13 @@
   <title>NC2IA25</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+ <script>
+    function toggleMenu() {
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('active');
+}
+  </script>
 </head>
 <body>
  
@@ -23,19 +29,21 @@
   <img src="IIC-logo (1).png" style="border-radius: 50%; width: 120px;height: 120px;
   object-fit: cover;margin-bottom: 1rem;;" alt="Dr. Manjunath Ramachandra">
 </div>
+
     <nav class="navbar">
-    <ul>
-    <li><a href="#">Home</a></li>
+    <ul class="nav-links" id="navLinks">
     <li><a href="#about">About Conference</a></li>
     <li><a href="#topics">Topics</a></li>
     <li><a href="#schedule">Schedule</a></li>
-    <li><a href="#patron-speakers">Key Speakers</a></li>
+    <li><a href="#patron-speakers">Keynote Speaker</a></li>
     <li><a href="#speakers">Patrons</a></li>
-    <!--li><a href="#payment">Payment Status</a></li-->
-      <li><a href="#register">Register</a></li>
+    <li><a href="#register">Register</a></li>
+    <li><a href="#committee">Advisory Committee</a></li>
       <li><a href="#contact">Contact Us</a></li>
     </ul>
+       
   </nav>
+   
     <div class="container">
       
       <div style="position: absolute; margin-left: 620px; margin-top: -28PX;" >
@@ -65,7 +73,7 @@ The primary objectives of a national conference on Computational Intelligence an
 
   <section class="topics" id="topics">
     <div class="container">
-      <h3>Conference Tracks</h3>
+      <h3>Conference Topics</h3>
       <ul>
         <li>Artificial Intelligence and ML - Fuzzy Systems and Neural Networks - Data Science, Big Data, Cloud Computing - Bioinformatics, Biomedical engineering
         - Computer Graphics & Virtual Reality - Optimization and Computation Intelligence - Database & Information Systems - Forensic data analysis - Big Data Analysis
@@ -91,7 +99,7 @@ The primary objectives of a national conference on Computational Intelligence an
       </div>
 
       <div class="schedule-card">
-        <h3>Midnoon – Aug 22, 2025</h3>
+        <h3>Afternoon – Aug 22, 2025</h3>
         <ul>
           <li>02:00 AM – Paper Presentations: Track</li>
           <li>03:30 AM – Valedictory Function</li>
@@ -109,7 +117,7 @@ The primary objectives of a national conference on Computational Intelligence an
 
 <section class="patron-speakers" id="patron-speakers">
   <div class="container">
-    <h3>Our Keynote Speakers</h3>
+    <h3>Our Keynote Speaker</h3>
 
     <div class="speaker-grid">
 
@@ -169,13 +177,25 @@ The primary objectives of a national conference on Computational Intelligence an
       <div class="speaker-card">
         <img src="Dr. Mohan Babu GN.jpg" alt="Mr. J. Arvind">
         <h3>Dr Mohan Babu G N</h3>
-        <p>Director , AMC Group of Institutions</p>
-        <p>Address the gatharing</p>
+        <p>Director, AMC Group of Institutions</p>
+        <p>Address the Gatharing</p>
       </div>
       <div class="speaker-card">
         <img src="Dr. Yuvaraju BN.jpg" alt="Mr. J. Arvind">
         <h3>Dr Yuvaraju B N</h3>
         <p>Principal, AMC Engineering College</p>
+        <p>Felicitation Address</p>
+      </div>
+      <div class="speaker-card">
+        <img src="shivakumar.jpg" alt="Mr. J. Arvind">
+        <h3>Dr Shivakumar G</h3>
+        <p>Vice-Principal, AMC Group of Institutions</p>
+        <p>Felicitation Address</p>
+      </div>
+      <div class="speaker-card">
+        <img src="nagraj.jpg" alt="Mr. J. Arvind">
+        <h3>Dr Nagaraja R</h3>
+        <p>Academic-Advisor, AMC Group of Institutions</p>
         <p>Felicitation Address</p>
       </div>
     </div>  
@@ -255,22 +275,125 @@ The primary objectives of a national conference on Computational Intelligence an
     </div>
   </div>
 </section>
+<section class="committee-section" id="committee">
+    <h2 class="committee-title">Advisory Committee</h2>
+    <div class="committee-grid">
+      
+      <div class="committee-member-card highlight">
+        <div class="committee-member-name">Dr. Karunakar</div>
+        <div class="committee-member-role">Principal, City Engineering College, Bengaluru.</div>
+         <div class="committee-member-name">Dr. Somya Naik</div>
+        <div class="committee-member-role">HOD-CSE, City Engg, Bengaluru.</div>
+         <div class="committee-member-name">Dr. V. Mareeswari</div>
+        <div class="committee-member-role">HOD-CSE, AMCEC.</div>
+        <div class="committee-member-name">Dr. Mini V</div>
+        <div class="committee-member-role">HOD-Physics, AMCEC.</div>
+         <div class="committee-member-name">Dr. V. Venkatalakshmi</div>
+        <div class="committee-member-role">HOD-Chemistry, AMCEC.</div>
+         <div class="committee-member-name">Dr. Nandeeswar S B</div>
+        <div class="committee-member-role">HOD-CSE-AIML, AMCEC.</div>
+         <div class="committee-member-name">Dr. Amutha R</div>
+        <div class="committee-member-role">HOD-ISE, AMCEC.</div>
+         <div class="committee-member-name">Dr. Dadapeer B</div>
+        <div class="committee-member-role">HOD-ME, AMCEC.</div>
+         <div class="committee-member-name">Dr. Manoj Kumar</div>
+        <div class="committee-member-role">HOD-EEE, AMCEC.</div>
+         <div class="committee-member-name">Dr. Nasrutullah</div>
+        <div class="committee-member-role">HOD-Mechatronics, AMCEC.</div>
+        <div class="committee-member-name">Dr. Jenitta</div>
+        <div class="committee-member-role">HOD-ECE, AMCEC.</div>
+        <div class="committee-member-name">Dr. Prashantha Kumar O</div>
+        <div class="committee-member-role">HOD-MBA, AMCEC.</div>
+        <div class="committee-member-name">Dr. Gomathy Prathima E</div>
+        <div class="committee-member-role">HOD-MCA, AMC.</div>
+         <div class="committee-member-name">Dr. C.H. Vanipriya</div>
+        <div class="committee-member-role">Professor and HOD, Sir MVIT, Bengaluru.</div>
+         
+        
 
+
+      </div>
+
+      <div class="committee-member-card highlight">
+        
+        
+        <div class="committee-member-name">Dr. R.K Bharathi</div>
+        <div class="committee-member-role">SJCE, Mysore</div>
+         <div class="committee-member-name">Dr. Madhu</div>
+        <div class="committee-member-role">BIT, Bengaluru</div>
+         <div class="committee-member-name">Prof. Manjunath</div>
+        <div class="committee-member-role">MIT, Mysore</div>
+         <div class="committee-member-name">Dr.Manjula Sanjay Koti</div>
+        <div class="committee-member-role">Prof. & Head, DSATM.</div>
+         <div class="committee-member-name">Dr. Veena </div>
+        <div class="committee-member-role">HOD MCA PESCE, Mangalore</div>
+        <div class="committee-member-name">Dr. Premasudha </div>
+        <div class="committee-member-role">Siddaganga Institute of Technology, Tumakuru</div>
+         <div class="committee-member-name">Dr. Andhe Dharani</div>
+        <div class="committee-member-role">Professor & Director-MCA, RVCE, Bengaluru.</div>
+         <div class="committee-member-name">Dr. Sivamoorthy</div>
+        <div class="committee-member-role">Professor, VTU Regional Center, Bengaluru.</div>
+         <div class="committee-member-name">Dr. Ashok D V</div>
+        <div class="committee-member-role">Prof. & Dean(Res.), JSSATE, Bengaluru.</div>
+        <div class="committee-member-name">Dr. M.N Nachappa</div>
+        <div class="committee-member-role">Jain University</div>
+        <div class="committee-member-name">Dr. Pavithra MS</div>
+        <div class="committee-member-role">HOD-MCA ATMECE Mysore</div>
+        <div class="committee-member-name">Dr. T Mamatha</div>
+        <div class="committee-member-role">HoD - MCA, AIT, Bengaluru.</div>
+         <div class="committee-member-name">Dr. Gomathi M</div>
+        <div class="committee-member-role">HOD-CMRIT, Bengaluru</div>
+        <div class="committee-member-name">Dr. Basanth Kumar</div>
+        <div class="committee-member-role">MIT, Mysore</div>
+      </div>
+
+      <div class="committee-member-card highlight">
+        
+        <div class="committee-member-name">Dr. Dharani</div>
+        <div class="committee-member-role">Director, MCA, RVCE, Bengaluru.</div>
+        <div class="committee-member-name">Dr. Kaviya</div>
+        <div class="committee-member-role">MCA-HOD, RNSIT, Bengaluru.</div>
+         <div class="committee-member-name">Dr. Mrunali M</div>
+        <div class="committee-member-role">HOD RVITM, Bengaluru</div>
+         <div class="committee-member-name">Dr. Sreekanth R</div>
+        <div class="committee-member-role">Prof. & HoD, Nitte Meenakshi Technology, Bengaluru.</div>
+         <div class="committee-member-name">Dr. Varadaraj</div>
+        <div class="committee-member-role">Navkis College of Engineering, Hassan</div>
+         <div class="committee-member-name">Prof. Divakar Karadi</div>
+        <div class="committee-member-role">HOD-MCA, Cambridge College of Engg, Bengaluru</div>
+         <div class="committee-member-name">Prof.Praveen K S</div>
+        <div class="committee-member-role">HOD-East West IT, Bengaluru.</div>
+         <div class="committee-member-name">Prof. Hamsaveni</div>
+        <div class="committee-member-role">Mysore University, Mysore</div>
+         <div class="committee-member-name">Dr. Madhwaraj K G</div>
+        <div class="committee-member-role">Prof & HOD, Mangalore Institute of Tech & Engg, Dakshina Kannada.</div>
+         <div class="committee-member-name">Dr. V. Asha</div>
+        <div class="committee-member-role">Prof. & HoD, NHCE, Bengaluru.</div>
+        <div class="committee-member-name">Dr. Chandrakanth Poojari</div>
+        <div class="committee-member-role">AIT, Bengaluru</div>
+        <div class="committee-member-name">Dr. Harish</div>
+        <div class="committee-member-role">Professor, UBDT, Davangere.</div>
+        
+        
+      </div>
+    </div>
+  </section>
 
 <section class="contact" id="contact">
   <h3>Contact Coordinators</h3>
   <div class="member-grid">
     
     
-    <div class="member-card">
-        <h3>Dr. Charles Arockiraj</h3>
-        <h3>98944-72531</h3>
-             </div>
+   
              <div class="member-card">
-        <h3>Prof. Gunasekaran K</h3>
-        <h3>98945-52121</h3>
-             </div>
- 
+        <div class="member-name">Dr. Charles Arockiraj </div>
+        <div class="member-role">98944-72531</div>
+      </div>
+       <div class="member-card">
+        <div class="member-name">Prof. Gunasekaran K</div>
+        <div class="member-role">98945-52121</div>
+      </div>
+           
   </div>
 </section>
  
@@ -314,6 +437,18 @@ The primary objectives of a national conference on Computational Intelligence an
 <div class="member-card">
         <div class="member-name">Prof. Manasa</div>
         <div class="member-role">Assistant Professor</div>
+      </div>
+      <div class="member-card">
+        <div class="member-name">Mr Anil Kumar</div>
+        <div class="member-role">Lab Assistant</div>
+      </div>
+      <div class="member-card">
+        <div class="member-name">Mr Sathyam Kumar</div>
+        <div class="member-role">Student - Technical Support</div>
+      </div>
+      <div class="member-card">
+        <div class="member-name">Mr Ravikanth</div>
+        <div class="member-role">Student - Design Support</div>
       </div>
     </div>
   </section>

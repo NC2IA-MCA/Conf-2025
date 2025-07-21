@@ -13,8 +13,8 @@ body {
 }
 
 .container {
-  width: 90%;
-  max-width: 960px;
+  width: 75%;
+  max-width: 950px;
   margin: auto;
   padding: 2rem 0;
 }
@@ -87,6 +87,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.15);
   padding: 1rem 0;
   text-align: center;
+  
 }
 
 .navbar ul {
@@ -94,7 +95,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   margin: 0;
   padding: 0;
 }
@@ -128,6 +129,11 @@ footer {
 .contact h3 {
   text-align: center;
   margin-bottom: 1rem;
+  
+}
+.contact h4 {
+  text-align: center;
+  margin-bottom: 0.5rem;
   
 }
 
@@ -207,10 +213,10 @@ footer {
 
 .speaker-card {
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 1.5rem;
-  width: 260px;
+  padding: 0.5rem;
+  width: 6px;
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -221,10 +227,10 @@ footer {
 
 .speaker-card img {
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .speaker-card h3 {
@@ -301,7 +307,7 @@ footer {
   }
 
   .speaker-card {
-    width: 300px;
+    width: 350px;
     height: 350px;
     perspective: 1000px;
   }
@@ -339,9 +345,9 @@ footer {
   }
 
   .card-front img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
     object-fit: cover;
     margin-bottom: 15px;
     transition: transform 0.4s ease;
@@ -405,7 +411,7 @@ footer {
 </style>
 .members-section {
       padding: 10px 20px;
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
       text-align: center;
     }
@@ -426,11 +432,14 @@ footer {
 
     .member-card {
       background-color: #fff;
-      border-radius: 10px;
+      border-radius: 30px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       padding: 20px;
       width: 250px;
       transition: transform 0.3s ease;
+    }
+  .member-card.highlight {
+      border-color: #007acc;
     }
 
     .member-card:hover {
@@ -440,17 +449,82 @@ footer {
     .member-name {
       font-size: 20px;
       font-weight: bold;
-      color: #222;
+      color: #003366;
+      text-align: center;
     }
 
     .member-role {
-      font-size: 16px;
+      font-size: 14px;
       color: #666;
-      margin-top: 8px;
+      margin-top: 2px;
+      text-align: center;
     }
 
     @media (max-width: 600px) {
       .member-card {
-        width: 100%;
+        width: 90%;
       }
+    }
+
+.committee-section {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .committee-title {
+      font-size: 2em;
+      color: #003366;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    .committee-title::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #007acc;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .committee-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      padding: 10px;
+    }
+
+    .committee-member-card {
+      background: #fff;
+      border: 3px solid transparent;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease, border 0.3s ease;
+    }
+
+    .committee-member-card.highlight {
+      border-color: #007acc;
+    }
+
+    .committee-member-card:hover {
+      transform: translateY(-5px);
+      border-color: #3399ff;
+    }
+
+   
+    .committee-member-name {
+      font-size: 0.8em;
+      color: #003366;
+      font-weight: bold;
+    }
+
+    .committee-member-role {
+      color: #555;
+      font-size: 0.7em;
+      margin-top: 5px;
     }
