@@ -6,16 +6,26 @@
   <title>NC2IA25</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
  <script>
-    function toggleMenu() {
-  const navLinks = document.getElementById('navLinks');
-  navLinks.classList.toggle('active');
-}
-  </script>
+  // Show button when user scrolls down 20px
+  window.onscroll = function () {
+    const btn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Scroll to top smoothly
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
 </head>
 <body>
- 
+ <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">↑</button>
   <header class="hero">
      <div>
         <img src="AICTE logo.png" style="border-radius: 50%; width: 120px;height: 120px;
@@ -214,7 +224,7 @@ The primary objectives of a national conference on Computational Intelligence an
       </div>
       <div class="speaker-card">
         <img src="Dr Charles.jpg" alt="Charles">
-        <h3>Dr. Charles M</h3>
+        <h3>Dr. Charles Arockiraj</h3>
         <p>Organizing Secretary</p>
         <p>Associate Professor - MCA</p>
       </div>
@@ -272,6 +282,8 @@ The primary objectives of a national conference on Computational Intelligence an
            <a href="https://forms.gle/nMkNwpxyVXpbi3ex9" style="word-wrap: break-word;">https://forms.gle/nMkNwpxyVXpbi3ex9</a>
            <br>
       <h4>Conference Brochure</h4><p><a href="Broucher.pdf" download >Download PDF</a></p>
+      <h4>Send You Paper</h4><p><a href="nc.mca@amceducation.in" download >nc.mca@amceducation.in</a></p>
+
     </div>
   </div>
 </section>
@@ -386,7 +398,7 @@ The primary objectives of a national conference on Computational Intelligence an
     
    
              <div class="member-card">
-        <div class="member-name">Dr. Charles M</div>
+        <div class="member-name">Dr. Charles Arockiraj </div>
         <div class="member-role">98944-72531</div>
       </div>
        <div class="member-card">
@@ -447,7 +459,7 @@ The primary objectives of a national conference on Computational Intelligence an
         <div class="member-role">Student - Technical Support</div>
       </div>
       <div class="member-card">
-        <div class="member-name">Mr Ravikanth K S</div>
+        <div class="member-name">Mr Ravikanth</div>
         <div class="member-role">Student - Design Support</div>
       </div>
     </div>
